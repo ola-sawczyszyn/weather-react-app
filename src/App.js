@@ -24,7 +24,7 @@ export default function App() {
             <div class="temperature-info">
               <span id="temperature">23</span>
               <span id="temperature-units">
-                <a href="#">°C </a>|<a href="#">°F </a>
+                <a href="/">°C </a>|<a href="/">°F </a>
               </span>
             </div>
           </div>
