@@ -25,10 +25,17 @@ body {
   flex-direction: row;
 }
 
-img#icon {
+.weather-icon {
   width: 72px;
   height: 72px;
   padding: 0;
+}
+
+.unit-changer {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+  padding: 0 4px;
 }
 
 .temperature-info {
@@ -38,14 +45,11 @@ img#icon {
   justify-content: flex-start;
 }
 
-#temperature {
+.temperature-value {
   display: inline;
   font-size: 48px;
   font-weight: 500;
   align-self: center;
-}
-
-#temperature-units {
 }
 
 .weather-forecast {
