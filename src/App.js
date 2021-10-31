@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Search from "./Search";
-import LastUpdated from "./LastUpdated";
 import "./App.css";
 import Weather from "./Weather";
 
