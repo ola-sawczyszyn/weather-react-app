@@ -1,24 +1,11 @@
 import React from "react";
-
+import getWeekDay from "./getWeekDay";
 function fixNumberLowerThanTen(number) {
   if (number < 10) {
     return "0" + number;
   } else {
     return number;
   }
-}
-
-function getWeekDay(date) {
-  let weekDays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  return weekDays[date.getDay()];
 }
 
 function formatLastUpdated(lastUpdated) {

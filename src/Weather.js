@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LastUpdated from "./LastUpdated";
-
+import Forecast from "./Forecast";
 function convertTemperature(temperature, unit) {
   if (unit === "fahrenheit") {
     temperature = (temperature * 9) / 5 + 32;
@@ -53,9 +53,7 @@ export default function Weather(props) {
           <div>Wind: {Math.round(weather.wind.speed)}km/h</div>
         </div>
       </div>
-      <div className="row">
-        <div className="weather-forecast" id="forecast"></div>
-      </div>
+      <Forecast coords={weather.coord} />
     </>
   );
 }
