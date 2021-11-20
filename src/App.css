@@ -42,6 +42,12 @@ body {
   background-position: 0 -150px;
 }
 
+.btn.btn-primary {
+  background-color: #71b4de;
+  border-color: #71b4de;
+  font-weight: bold;
+}
+
 .temperature-wrapper {
   display: flex;
   flex-direction: row;

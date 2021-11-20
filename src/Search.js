@@ -47,7 +47,10 @@ export default function Search(props) {
         </div>
         <div className="col">
           <input type="submit" className="btn btn-primary" value="Search" />
-          <button className="btn btn-success" onClick={handleCurrentLocation}>
+          <button
+            className="btn btn-primary mx-1"
+            onClick={handleCurrentLocation}
+          >
             Current location
           </button>
         </div>
