@@ -15,9 +15,31 @@ body {
   margin: 0 auto;
 }
 
+.card.weather-card {
+  background: #f8d7e8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5 rem;
+  min-height: 50vh;
+  position: relative;
+}
+
+.card.pokemon-card {
+  --pokemon-card-width: 250px;
+  --pokemon-card-height: 250px;
+  background: #f3b1cd;
+  width: var(--pokemon-card-width);
+  height: var(--pokemon-card-height);
+  position: absolute;
+  bottom: calc(var(--pokemon-card-height) * -0.5);
+  right: calc(var(--pokemon-card-width) * -0.5);
+}
+
 body {
   height: 100%;
-  background: linear-gradient(to left top, #1c92d2, #f2fcfe);
+  background: white;
+  background-image: url(pokemon_bg.jpg);
+  background-size: cover;
+  background-position: 0 -150px;
 }
 
 .temperature-wrapper {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Search from "./Search";
 import "./App.css";
 import Weather from "./Weather";
+import Pokemon from "./Pokemon";
 
 export default function App() {
   let [weather, setWeather] = useState();
@@ -14,11 +15,14 @@ export default function App() {
 
   return (
     <div className="container pt-4">
-      <div className="card p-4 center">
+      <div className="card p-4 center weather-card">
         <div className="row mb-4">
           <Search onWeather={handleWeather} />
         </div>
         {weather && <Weather weather={weather} lastUpdated={lastUpdated} />}
+        <div className="card pokemon-card">
+          <Pokemon seed={weather?.name} />
+        </div>
       </div>
       <div className="center">
         <a href="https://github.com/ola-sawczyszyn/weather-react-app">
