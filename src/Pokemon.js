@@ -35,11 +35,11 @@ export default function Pokemon(props) {
 
   return (
     <>
-      <h3 className="text-center">{pokemon.name} </h3>
-      <img src={pokemon.sprites.front_default} />
+      <h3 className="text-center">{pokemon.species.name} </h3>
+      <img src={pokemon.sprites.front_default} alt={pokemon.species.name} />
       <ul>
         <li>types: {types.join(", ")}</li>
-        <li>weight: {pokemon.weight}kg</li>
+        <li>weight: {pokemon.weight}lb</li>
       </ul>
     </>
   );

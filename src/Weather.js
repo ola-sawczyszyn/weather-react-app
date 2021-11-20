@@ -14,7 +14,7 @@ export default function Weather(props) {
   return (
     <>
       <div className="row">
-        <h3>{weather.name}</h3>
+        <h2>{weather.name}</h2>
         <LastUpdated lastUpdated={lastUpdated} />
         <div>{weather.weather[0].description}</div>
       </div>

@@ -15,12 +15,10 @@ export default function Forecast(props) {
       .get(
         `https://api.openweathermap.org/data/2.5/onecall?lat=${coords.lat}&lon=${coords.lon}&exclude=${exclude}&appid=${apiKey}&units=metric`
       )
-      .then(handleForecastResponse);
+      .then((response) => response.data.daily.slice(1, 7))
+      .then((forecast) => setForecastDays(forecast))
+      .catch((error) => console.error(error));
   }, [coords]);
-
-  function handleForecastResponse(response) {
-    setForecastDays(response.data.daily.slice(1, 7));
-  }
 
   if (forecastDays.length === 0) {
     return <> </>;

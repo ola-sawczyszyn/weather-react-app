@@ -13,6 +13,8 @@ export default function App() {
     setLastUpdated(new Date());
   }
 
+  let cityName = weather?.name;
+
   return (
     <div className="container pt-4">
       <div className="card p-4 center weather-card">
@@ -20,15 +22,21 @@ export default function App() {
           <Search onWeather={handleWeather} />
         </div>
         {weather && <Weather weather={weather} lastUpdated={lastUpdated} />}
-        <div className="card pokemon-card">
-          <Pokemon seed={weather?.name} />
-        </div>
+
+        {cityName && (
+          <div className="card pokemon-card">
+            <Pokemon seed={cityName} />
+          </div>
+        )}
       </div>
       <div className="center">
-        <a href="https://github.com/ola-sawczyszyn/weather-react-app">
+        <a
+          className="github-link"
+          href="https://github.com/ola-sawczyszyn/weather-react-app"
+        >
           Open-source code
         </a>
-        by Aleksandra Sawczyszyn
+        <span className="mx-1">by Aleksandra Sawczyszyn</span>
       </div>
     </div>
   );

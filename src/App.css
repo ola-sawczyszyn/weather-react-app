@@ -6,6 +6,20 @@ body {
   padding: 0;
 }
 
+body {
+  height: 100%;
+  background: white;
+  background-image: url(pokemon_bg.jpg);
+  background-size: cover;
+  background-position: 0 -150px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .weather-icon {
   font-size: 100px;
 }
@@ -32,21 +46,24 @@ body {
   position: absolute;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   bottom: calc(var(--pokemon-card-height) * -0.5);
-  right: calc(var(--pokemon-card-width) * -0.5);
+  right: calc(var(--pokemon-card-width) * -0.8);
 }
 
-body {
-  height: 100%;
-  background: white;
-  background-image: url(pokemon_bg.jpg);
-  background-size: cover;
-  background-position: 0 -150px;
+.card.pokemon-card img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 .btn.btn-primary {
   background-color: #71b4de;
   border-color: #71b4de;
   font-weight: bold;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .temperature-wrapper {
@@ -103,4 +120,8 @@ body {
 
 .weather-forecast-temperature {
   font-size: 13px;
+}
+
+a.github-link {
+  color: #e2451c;
 }
