@@ -29,12 +29,19 @@ export default function Weather(props) {
             <span className="temperature-value">
               {convertTemperature(weather.main.temp, units)}
             </span>
-            <span className="unit-changer" onClick={() => setUnits("celcius")}>
+            <span
+              className={`unit-changer ${
+                units === "celcius" ? "selected" : ""
+              }`}
+              onClick={() => setUnits("celcius")}
+            >
               °C
             </span>
             |
             <span
-              className="unit-changer"
+              className={`unit-changer ${
+                units === "fahrenheit" ? "selected" : ""
+              }`}
               onClick={() => setUnits("fahrenheit")}
             >
               °F

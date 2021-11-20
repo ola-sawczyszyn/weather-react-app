@@ -38,6 +38,11 @@ body {
   padding: 0 4px;
 }
 
+.unit-changer.selected {
+  color: black;
+  cursor: default;
+}
+
 .temperature-info {
   flex-grow: 1;
   display: flex;
