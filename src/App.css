@@ -14,9 +14,9 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-
+/* #f8d7e8 #f3b1cd*/
 .card.weather-card {
-  background: #f8d7e8;
+  background: #e6cb5f;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0.5 rem;
   min-height: 50vh;
@@ -26,10 +26,11 @@ body {
 .card.pokemon-card {
   --pokemon-card-width: 250px;
   --pokemon-card-height: 250px;
-  background: #f3b1cd;
+  background: #f78869;
   width: var(--pokemon-card-width);
   height: var(--pokemon-card-height);
   position: absolute;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   bottom: calc(var(--pokemon-card-height) * -0.5);
   right: calc(var(--pokemon-card-width) * -0.5);
 }
